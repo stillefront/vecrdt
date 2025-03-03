@@ -8,8 +8,8 @@ Clone the project, install its dependencies, and run `yarn dev` to start the loc
 
 ```bash
 $ git clone https://github.com/stillefront/vecrdt.git
-# Cloning into ba-vector-crdt...
-$ cd ba-vector-crdt
+# Cloning into vecrdt...
+$ cd vecrdt
 $ yarn
 # Installing project dependencies...
 $ yarn dev
