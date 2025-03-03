@@ -1,0 +1,33 @@
+.toolbarButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 4px;
+  border: none;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #ebebeb;
+  }
+
+  &.active {
+    background-color: #ffffff;
+    .toolbarButtonIcon {
+      color: #000;
+    }
+  }
+
+  .toolbarButtonIcon {
+    color: #bebebe;
+    width: 24px;
+    height: 24px;
+  }
+
+  &:hover .toolbarButtonIcon {
+    color: #000;
+  }
+}

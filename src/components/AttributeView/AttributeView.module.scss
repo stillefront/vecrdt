@@ -1,0 +1,31 @@
+.attributeView {
+  color: black;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 300px;
+  right: 0;
+  top: 0;
+  bottom: 0;
+
+  background: #ffffff;
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-left-color: #c2c2c2;
+
+  padding: 0;
+  overflow: hidden;
+
+  .editorContainer {
+    flex: 1 1 60%;
+    border-bottom: 1px solid #c2c2c2;
+  }
+
+  .treeContainer {
+    display: flex;
+    flex: 1 1 60%;
+    //flex: 1;
+    overflow: hidden;
+  }
+}

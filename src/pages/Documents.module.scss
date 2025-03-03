@@ -1,0 +1,84 @@
+.documentView {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background: #f9f9f9;
+  color: #3c3c3c;
+  font-family: sans-serif;
+  padding: 1rem;
+}
+
+.creationSection {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.creationButton {
+  color: #3c3c3c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+  &:hover {
+    background-color: #ebebeb;
+    border-color: #999;
+    color: #000;
+  }
+}
+
+.docList {
+  width: 100%;
+  max-width: 600px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1rem;
+    transition: box-shadow 0.3s;
+    &:hover {
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+      flex: 1;
+    }
+    .docActions {
+      display: flex;
+      gap: 0.5rem;
+      button {
+        color: #000;
+        background: transparent;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        padding: 0.25rem 0.5rem;
+        cursor: pointer;
+        transition: background-color 0.3s, border-color 0.3s;
+        &:hover {
+          background-color: #ebebeb;
+          border-color: #999;
+        }
+      }
+    }
+  }
+}

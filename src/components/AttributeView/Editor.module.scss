@@ -1,0 +1,242 @@
+.editorContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  & > * {
+    padding-left: 16px;
+    padding-right: 8px;
+    padding-top: 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #c2c2c2;
+  }
+
+  & > *:last-child {
+    border-bottom: none;
+  }
+}
+
+.docNameEdit {
+  font-family: inherit;
+  font-size: 16px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  font-weight: bold;
+  color: #333;
+  padding: 4px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  background-color: #fff;
+  outline: none;
+
+  &:focus {
+    border-color: #0078d4;
+  }
+}
+
+.elementName {
+  & h3 {
+    font-size: 16px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    &.docName {
+      cursor: text;
+    }
+  }
+}
+
+span {
+  font-family: monospace;
+  font-size: 12px;
+}
+
+.attributeGroup {
+  display: flex;
+  flex-direction: column;
+  & p {
+    margin-top: 4px;
+    margin-bottom: 16px;
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  & .attributeRow {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+  }
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 12px;
+  width: fit-content;
+  height: 24px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding-right: 4px;
+  padding-left: 4px;
+
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+
+  & label {
+    width: auto;
+    height: fit-content;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    color: #707070;
+    margin-right: 4px;
+    white-space: nowrap;
+  }
+
+  & input {
+    max-width: 50px;
+    min-width: 30px;
+    height: fit-content;
+    padding: 2px 0px;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    color: #0c0c0c;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    transition: border-color 0.2s ease;
+  }
+
+  &:hover {
+    border-color: #888;
+  }
+
+  &:focus-within {
+    border-color: #0078d4;
+  }
+}
+
+.addAttributeContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: fit-content;
+}
+
+.disabledInput {
+  background-color: #f0f0f0 !important;
+  color: #d0d0d0;
+  cursor: not-allowed;
+}
+
+.addAttribute,
+.removeAttribute {
+  color: #3c3c3c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 4px;
+  border: none;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  &:hover {
+    background-color: #ebebeb;
+    color: #000000;
+  }
+}
+
+.colorInput {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 12px;
+  width: 180px;
+  height: 24px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding-right: 4px;
+  padding-left: 4px;
+  transition: border-color 0.2s ease;
+
+  &:hover {
+    border-color: #888;
+  }
+
+  &:focus-within {
+    border-color: #0a8ff5;
+  }
+
+  & label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #707070;
+    width: 45px;
+    white-space: nowrap;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+  }
+
+  input[type="color"] {
+    -webkit-appearance: none;
+    border: none;
+    width: 14px;
+    height: 14px;
+    padding: 0;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: transparent;
+    transition: box-shadow 0.2s ease;
+
+    &:hover {
+      box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 4px rgba(0, 120, 212, 0.6);
+    }
+  }
+
+  input[type="color"]::-webkit-color-swatch {
+    border: none;
+    border-radius: 4px;
+  }
+
+  input[type="color"]::-webkit-color-swatch-wrapper {
+    padding: 0;
+  }
+
+  & input[type="text"] {
+    width: 80px;
+    height: 14px;
+    padding: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    border: none;
+
+    outline: none;
+    color: #333;
+    background-color: #fff;
+    transition: border-color 0.2s ease;
+
+    &:focus {
+      border-color: #0078d4;
+    }
+  }
+}
